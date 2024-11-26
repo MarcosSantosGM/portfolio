@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2 class="m-2">About Me</h2>
+                <img src="../../assets/foto.jpg" alt="profile picture" width="256" height="256" class="rounded-circle m-2">
+                <h3 class="m-2">Web Application Developer</h3>
+                <p class="m-2">Specialized in creating practical and effective solutions by applying knowledge gained through both
+                    academic studies and professional experience. I am seeking a team where I can continue to grow and
+                    contribute to the development of web applications.</p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2 class="m-2">Featured Project</h2>
+                <h4>{{featuredProject.nombre}}</h4>
+            </div>
+            <carousel>
+                <div *ngFor="let imagen of featuredProject.imagenes">
+                    <slide><img src={{imagen}} alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+            <p class="m2-2 mt-2">{{featuredProject.resumen}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>  

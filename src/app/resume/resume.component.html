@@ -1,0 +1,148 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download CV</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isworkExperieneceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience:</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isworkExperieneceOpen" style="color: white;">></div>
+                        <div *ngIf="isworkExperieneceOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Fullstack Web Developer</h2>
+                    <h3 class="text-primary">Madrid City Council</h3><p>January - November 2024</p>
+                    <ul>
+                        <li>I developed websites using JavaScript, PHP, CSS, HTML, and WordPress.</li>
+                        <li>Data analysis and automation using Python.</li>
+                        <li>Project management in virtual reality.</li>
+                        <li>Image and video editing.</li>
+                    </ul>
+                </div>
+                <br>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Fullstack Developer</h2>
+                    <h3 class="text-primary">DLTCODE, SL</h3><p>March - June 2023</p>
+                    <ul>
+                        <li>Engineering project development.</li>
+                        <li>Application development with Java Spring Boot and Angular.</li>
+                        <li>Debugging code issues.</li>
+                    </ul>
+                </div>
+                <br>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Web Developer</h2>
+                    <h3 class="text-primary">VORTEX DIMENSION DIGITAL, SL</h3><p>April - June 2021</p>
+                    <ul>
+                        <li>Website development with WordPress, CSS, and HTML. </li>
+                        <li>AManaging the company's social media accounts</li>
+                        <li>Computer equipment maintenance.</li>
+                    </ul>
+                </div>
+    
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education:</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">IES REY FERNANDO VI</h2>
+                    <h3 class="text-primary">Higher Vocational Degree in Web Application Development</h3><p>2021 - 2023</p>
+                    <ul>
+                        <li>Final Year Project: E-commerce Application Development <br> <a href="https://github.com/MarcosSantosGM/
+                            ProyectoDaw">https://github.com/MarcosSantosGM/
+                            ProyectoDaw</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">IES VILLABLANCA</h2>
+                    <h3 class="text-primary">Vocational Training in Microcomputer Systems and Networks</h3><p>2019 - 2021</p>
+                </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications:</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">EOI Moratalaz</h2>
+                    <h3 class="text-primary">B2 English Certificate from the Official Language School.</h3><p>2021</p>
+                </div>
+                <br>
+                <div style="text-align: left;">
+                    <h3 class="text-primary">Basic Machine Learning and Python Course UDEMY</h3><p>Obtained 2024</p>
+                    <ul>
+                        <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3532af8c-166c-4bc8-8497-0a35504cf1f8.pdf?trk=public_profile_see-credential" target="_blank">Basic Machine Learning and Python Course</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div style="text-align: left;">
+                    <h3 class="text-primary">Python for Data Science Course UDEMY</h3><p>Obtained 2024</p>
+                    <ul>
+                        <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-77e2039d-1b99-4b89-bd72-d417adf6cde2.pdf?trk=public_profile_see-credential" target="_blank">Python for Data Science Course</a></li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills:</div>
+                    
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programing Languages:</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="col">
+                            <h3>Frameworks:</h3>
+                            <ul>
+                                <li>Angular</li>
+                                <li>SpringBoot</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Other Skills:</h3>
+                            <li>Source control via Git</li>
+                            <li>MVC architecture</li>
+                        </div>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+
+    
+</div>
