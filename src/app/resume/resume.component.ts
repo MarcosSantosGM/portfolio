@@ -25,7 +25,7 @@ export class ResumeComponent {
   DownloadFile(){
     const link = this.renderer.createElement('a');
     link.setAttribute("target",'blank');
-    link.setAttribute('href', '../../assets/Marcos-Santos-CV.pdf');
+    link.setAttribute('href', './assets/Marcos-Santos-CV.pdf');
     link.setAttribute('download', 'Marcos-Santos-CV.pdf');
     link.click();
     link.remove();
