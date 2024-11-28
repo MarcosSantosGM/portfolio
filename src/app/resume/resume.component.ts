@@ -19,7 +19,7 @@ export class ResumeComponent {
 
 
   constructor(private titleService: Title, private renderer: Renderer2){
-    this.titleService.setTitle('Marcos Santos - Resume')
+    this.titleService.setTitle('Marcos Santos - Resumen')
   }
 
   DownloadFile(){
